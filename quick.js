@@ -41,7 +41,7 @@ console.log("quick sort");
      ele[high].style.background="pink";
      swap(ele[i], ele[high]);
      ele[i].style.background="green";
-     ele[high].style.background="pink";
+     ele[high].style.background="purple";
      
     await wait(delay);
     
