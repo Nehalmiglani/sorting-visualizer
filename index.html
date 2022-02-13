@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="index.css">
+  
+    <title>sorting visualizer</title>
+   </head>
+  
+        
+<header>
+  <nav class="navbar navbar-dark bg-dark p-3">
+    <span class="navbar-brand mb-0 h1"><b>Sorting visualizer</b></span>
+
+    <span id="size" class="text-primary">Size
+        <input id="input_size" type="range" min="5" max="80" step=1 value=60 >
+    </span>
+    <span id="speed" class="text-primary">Speed
+        <input id="input_speed" type="range" min="20" max="300" stepDown=10 value=100 >
+    </span>
+    <button id="newarr" type="button" class="btn btn-secondary" onclick="generate()"  style="color:blue">New array</button>
+
+   <div class="justify-content-end p-0 m-0">
+    <button type="button" class="btn btn-secondary Selectionsort p-1" >Selection sort</button>
+    <button type="button" class="btn btn-secondary Insertionsort p-1">Insertionsort</button>
+  
+   <button type="button" class="btn btn-secondary Quicksort p-1" >Quick sort</button>
+   <button type="button" class="btn btn-secondary Mergesort p-1">Merge sort</button>
+   <button type="button" class="btn btn-secondary Bubblesort p-1">Bubble sort</button>
+   <!-- <button type="button" class="btn btn-secondary Heapsort p-1">Heap sort</button> -->
+  </div>
+
+  </nav>
+  </header>
+
+<body>
+  
+   <div class="flex-container">
+      <div id="bars" class="flex-container-arr"></div>
+       <div class="flex-container-tc"></div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+     <script src="main.js"></script>
+     <script src="selection.js"></script>
+     <script src="insertion.js"></script>
+     <script src="quick.js"></script>
+     <script src="bubble.js"></script>
+     <script src="merge.js"></script>
+     
+     <!-- <script src="insertion.js"></script> -->
+    
+</body>
+
+</html>
