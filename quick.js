@@ -19,7 +19,6 @@ console.log("quick sort");
               // increment index of smaller element
               
 
-             
             i++;
             ele[j].style.background="orange";
             ele[i].style.background="orange";
@@ -31,7 +30,10 @@ console.log("quick sort");
           
         }
    
-        
+          else{
+            // color if not less than pivot
+            ele[j].style.background = 'pink';
+        }
     }
     await wait(delay);
      i++;
@@ -39,7 +41,7 @@ console.log("quick sort");
      ele[high].style.background="pink";
      swap(ele[i], ele[high]);
      ele[i].style.background="green";
-     ele[high].style.background="green";
+     ele[high].style.background="pink";
      
     await wait(delay);
     
